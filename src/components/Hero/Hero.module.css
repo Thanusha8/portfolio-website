@@ -1,0 +1,131 @@
+@import "../../vars.css";
+
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: auto; 
+    
+}
+
+.content {
+    display: flex;
+    width: 50%; 
+    position: relative;
+}
+
+.heroImgLeft{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.description1{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+
+    margin-left: -210px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    word-wrap: break-word;
+    font-size: 20px; 
+}
+
+.heroImgRight{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.description2{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    z-index: 0;
+    
+    margin-left: -150px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+
+
+.description1, 
+.description2 {
+    font-size: 25px;
+    font-family: var(--font--roboto);
+    color: var(--color-text);
+    
+}
+
+.description1 p, 
+.description2 p {
+    font-weight: 700;
+    font-size: 35px; 
+    
+}
+
+
+
+.heroImgLeft img,
+.heroImgRight img {
+    width: 100%; 
+    max-height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: min(100%, 400px); /* Limits maximum width */
+    }
+   
+    .description1, 
+    .description2 {
+      display: none;
+    }
+    
+    .heroImgLeft,
+    .heroImgRight {
+      width: 50%; /* Each takes exactly half */
+      flex-shrink: 0; /* Prevents resizing */
+    }
+    
+    .heroImgLeft img,
+    .heroImgRight img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      
+      object-fit: cover;
+      display: block;
+    }
+    
+    /* Ensures perfect adjacency */
+    .heroImgLeft {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    .heroImgRight {
+      margin-left: 0;
+      padding-left: 0;
+    }
+}
