@@ -64,6 +64,14 @@
       "source": "https://github.com/Thanusha8/SQL-Data-Analysis-Employee-Salaries"
     },
     {
+      "title": "R",
+      "imageSrc": "projects/R.png",
+      "description": "R analysis of college graduation rates using ISLR2",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://github.com/Thanusha8/us-college-analysis/blob/main/US%20colleges.R",
+      "source": "https://github.com/Thanusha8/us-college-analysis/tree/main"
+    },
+    {
       "title": "Podcast",
       "imageSrc": "projects/grp1.jpeg",
       "description": "Led a software project management team at university",
